@@ -1,5 +1,5 @@
 # Hotel-Management
-Feedback management system for hotels
+Feedback management system for hotels using python flask module and mongodb
 
 Run using main.py
 
