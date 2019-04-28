@@ -13,7 +13,7 @@ class set_required_details:
     my_list = {}
     
     def insert_details(self, food_rating, room_service_rating):
-        client = pymongo.MongoClient("mongodb://sa:sa123@webdevtesting-shard-00-00-duzda.mongodb.net:27017,webdevtesting-shard-00-01-duzda.mongodb.net:27017,webdevtesting-shard-00-02-duzda.mongodb.net:27017/test?ssl=true&replicaSet=WebDevTesting-shard-0&authSource=admin&retryWrites=true")
+        client = pymongo.MongoClient("mongodb://<usr>:<pwd>@<sid>:<port>,webdevtesting-shard-00-01-duzda.mongodb.net:27017,webdevtesting-shard-00-02-duzda.mongodb.net:27017/test?ssl=true&replicaSet=WebDevTesting-shard-0&authSource=admin&retryWrites=true")
         db = client.Customers
         mycol = db.Customers
         self.total_rating["food"] = int(food_rating)
